@@ -5,40 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07e178f3-a12f-4a9e-bee9-770f32d1e60b" name="Changes" comment="kick-off">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Portal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/feature/Spinner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Flexbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/homepage/Questions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/homepage/Tags.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constant/constant.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constant/enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constant/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/stackoverflowContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fetch/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useDebounceAsync.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useOnEndReached.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/stackoverflow.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/formatChecker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,8 +84,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675775807306</updated>
-      <workItem from="1675775808329" duration="17803000" />
+      <workItem from="1675775808329" duration="18506000" />
     </task>
+    <task id="LOCAL-00001" summary="kick-off">
+      <created>1675793681618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675793681618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
