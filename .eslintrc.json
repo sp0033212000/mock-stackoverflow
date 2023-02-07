@@ -1,3 +1,124 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/display-name": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/no-anonymous-default-export": "off",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@react*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "next*",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@next*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/styles*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/constant*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/libs*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/event*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/fetch*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/utils*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/hooks/*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/context/*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/public/assets*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/components/common/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/components/feature/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/components/layout/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/components/page/*",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroupsExcludedImportTypes": [
+          "react",
+          "@react",
+          "next",
+          "@next"
+        ]
+      }
+    ]
+  }
 }
