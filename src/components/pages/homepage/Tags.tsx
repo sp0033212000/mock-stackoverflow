@@ -1,20 +1,27 @@
 import React from "react";
 
-import { Heading, Tag } from "@chakra-ui/react";
+import { Heading, Tag, Text } from "@chakra-ui/react";
+
+import { isEmptyArray, isNotEmptyArray, isNotEmptyString } from "@/utils";
 
 import { useStackoverflowContext } from "@/context/stackoverflowContext";
 
 import Flexbox from "@/components/layout/Flexbox";
 
 const Tags: React.FC = () => {
-  const { tags, selectedTags, onTagSelect } = useStackoverflowContext();
+  const { tags, selectedTags, onTagSelect, keyword } =
+    useStackoverflowContext();
 
   return (
     <section className={"mb-4"}>
       <Heading as={"h2"} className={"mb-4"}>
         Trending
       </Heading>
-      <Flexbox className={"max-w-full overflow-scroll"} align={"center"}>
+      <Flexbox
+        conditional={isNotEmptyArray(tags)}
+        className={"max-w-full overflow-scroll"}
+        align={"center"}
+      >
         {tags.map(({ name }) => {
           const isSelected = selectedTags.includes(name);
           return (
@@ -30,6 +37,11 @@ const Tags: React.FC = () => {
           );
         })}
       </Flexbox>
+      {isEmptyArray(tags) && isNotEmptyString(keyword) && (
+        <Text color={"red.500"}>
+          Could not found tags by keyword: {keyword}
+        </Text>
+      )}
     </section>
   );
 };

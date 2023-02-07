@@ -8,7 +8,11 @@ import React, {
   useState,
 } from "react";
 
+import { isBrowser } from "@chakra-ui/utils";
+
 import { NOOP } from "@/constant";
+
+import { isEmptyArray } from "@/utils";
 
 import useDebounceAsync from "@/hooks/useDebounceAsync";
 
@@ -51,7 +55,11 @@ export const StackoverflowContextProvider: React.FC<PropsWithChildren> = ({
 
   useEffect(() => {
     if (!tagsData) return;
-    setSelectedTags([tagsData.items[0].name]);
+    if (isEmptyArray(tagsData.items)) return setSelectedTags([]);
+    else setSelectedTags([tagsData.items[0].name]);
+    if (isBrowser) {
+      window.scrollTo({ top: 0 });
+    }
   }, [tagsData]);
 
   const onTagSelect = useCallback((tag: string) => {

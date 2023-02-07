@@ -12,6 +12,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+import { isEmptyArray } from "@/utils";
+
 import useOnEndReached from "@/hooks/useOnEndReached";
 
 import { useStackoverflowContext } from "@/context/stackoverflowContext";
@@ -30,6 +32,8 @@ const Questions: React.FC = () => {
 
   const [{ value, loading }, fetch] = useAsyncFn(
     async (defaultItems: Array<IQuestionEntity> = []) => {
+      if (isEmptyArray(selectedTags)) return null;
+
       if (page.current === 1) fromDateCache.current = new Date().getTime();
 
       const data = await stackoverflow.questions.getMany(
@@ -210,8 +214,9 @@ const Questions: React.FC = () => {
         <Skeleton height={"20px"} />
         <Skeleton height={"20px"} />
       </Stack>
+      {isEmptyArray(selectedTags) && <Text>No Data</Text>}
     </section>
   );
 };
-3;
+
 export default Questions;
